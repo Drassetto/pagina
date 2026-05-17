@@ -43,6 +43,7 @@ h1 {
   background: var(--surface);
   border-left: 1px solid var(--border);
   border-top: 1px solid var(--border);
+  height: 80px;
 }
 
 /* La primera fila (cabecera) tiene fondo oscuro */
@@ -79,8 +80,8 @@ h1 {
 
 /* La imagen dentro de la celda */
 .imgtabla {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;       /* la imagen ocupa toda la celda sin deformarse */
   filter: grayscale(100%); /* empieza en blanco y negro */
   transition: 0.3s;        /* animacion suave */
