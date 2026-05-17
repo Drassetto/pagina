@@ -81,7 +81,7 @@ h1 {
 .imgtabla {
   width: 90%;
   height: 90%;
-  object-fit: cover;       /* la imagen ocupa toda la celda sin deformarse */
+  object-fit: contain;       /* la imagen ocupa toda la celda sin deformarse */
   filter: grayscale(100%); /* empieza en blanco y negro */
   transition: 0.3s;        /* animacion suave */
 }
