@@ -72,7 +72,9 @@ h1 {
 .celda-foto {
   padding: 0;
   overflow: hidden;
-  height: 80px;            /* altura fija para todas las fotos */
+  height: 80px; 
+  flex: 1;
+  max-width: none;
 }
 
 /* La imagen dentro de la celda */
