@@ -1,28 +1,90 @@
+/* Variables de colores, las cambias aca y se actualiza todo */
+:root {
+  --bg: #f5f5f5;          /* fondo de la pagina */
+  --surface: #ffffff;     /* fondo de las filas */
+  --border: #e0e0e0;      /* color de los bordes */
+  --header-bg: #3a3a3a;   /* fondo de la cabecera */
+  --header-text: #ffffff; /* texto de la cabecera */
+  --text: #333333;        /* texto normal */
+}
+
+/* Reseteo de margenes por defecto del navegador */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo general de la pagina */
+body {
+  background: var(--bg);
+  font-family: sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;           /* centra todo */
+  flex-direction: column;  /* apilado de arriba a abajo */
+  align-items: center;     /* centrado horizontal */
+  padding: 3rem 1.5rem;
+}
+
+/* Titulo */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Cada fila de la tabla */
+.fila {
+  display: flex;           /* pone las celdas una al lado de la otra */
+  align-items: stretch;    /* que todas las celdas tengan la misma altura */
+  width: 100%;
+  max-width: 780px;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+}
+
+/* La primera fila (cabecera) tiene fondo oscuro */
+.fila.cabecera {
+  background: var(--header-bg);
+  color: var(--header-text);
+  font-weight: 600;
+}
+
+/* Efecto al pasar el mouse por una fila (menos la cabecera) */
+.fila:not(.cabecera):hover {
+  background: #f0f0f0;
+}
+
+/* Cada celda de datos */
+.celda {
+  flex: 1;                 /* todas las celdas ocupan el mismo ancho */
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: center; /* texto centrado horizontal */
+  align-items: center;     /* texto centrado vertical */
+  padding: 10px;
+}
+
+/*sin padding para que la imagen ocupe todo */
+.celda-foto {
+  padding: 0;
+  overflow: hidden;
+  height: 80px;            /* altura fija para todas las fotos */
+}
+
+/* La imagen dentro de la celda */
 .imgtabla {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  filter: grayscale(100%);
-  transition: 0.3s;
+  object-fit: cover;       /* la imagen ocupa toda la celda sin deformarse */
+  filter: grayscale(100%); /* empieza en blanco y negro */
+  transition: 0.3s;        /* animacion suave */
 }
 
+/* Al pasar el mouse, la foto se pone a color */
 .imgtabla:hover {
   filter: grayscale(0%);
-}
-
-
-.fila {
-  display: flex;
-  align-items: stretch;
-}
-
-.celda {
-  flex: 1;
-  border: 1px solid black;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 10px;
 }
