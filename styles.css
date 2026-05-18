@@ -67,7 +67,6 @@ h1 {
 /* Cada celda de datos */
 .celda {
   flex: 1;                 /* todas las celdas ocupan el mismo ancho */
-  width: 20%
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   display: flex;
