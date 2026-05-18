@@ -54,6 +54,7 @@ h1 {
 
 /* La primera fila (cabecera) tiene fondo oscuro */
 .fila.cabecera {
+  display: flex;
   background: var(--header-bg);
   color: var(--header-text);
   font-weight: 600;
