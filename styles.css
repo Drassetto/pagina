@@ -95,7 +95,7 @@ h1 {
 }
 
 
-.im
+
 /* Al pasar el mouse, la foto se pone a color */
 .imgtabla:hover {
   filter: grayscale(0%);
