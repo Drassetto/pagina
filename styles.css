@@ -103,9 +103,16 @@ h1 {
 
 
 .polilogo {
-  transition: transform 1s linear;
+  display: inline-block;
+  animation: mover 3s linear infinite alternate;
 }
 
-.polilogo:hover {
-   transform: translate(200px, 10px) rotate(0.5deg) translate(-200px, 10px);
+@keyframes mover {
+  from {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  to {
+    transform: translate(200px, 10px) rotate(0.5deg);
+  }
 }
