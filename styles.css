@@ -94,7 +94,18 @@ h1 {
   transition: 0.3s;        /* animacion suave */
 }
 
+
+.im
 /* Al pasar el mouse, la foto se pone a color */
 .imgtabla:hover {
   filter: grayscale(0%);
+}
+
+
+.polilogo {
+  transition: transform 0.05s linear;
+}
+
+.polilogo: hover {
+   transform: translate(2px, 1px) rotate(0.5deg);
 }
