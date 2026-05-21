@@ -103,7 +103,7 @@ h1 {
 
 
 .polilogo {
-  transition: transform 3s linear;
+  transition: transform 0.1s linear;
 }
 
 .polilogo:hover {
