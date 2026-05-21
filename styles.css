@@ -106,6 +106,6 @@ h1 {
   transition: transform 3s linear;
 }
 
-.polilogo: hover {
+.polilogo:hover {
    transform: translate(200px, 10px) rotate(0.5deg);
 }
