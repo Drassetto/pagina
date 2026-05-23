@@ -104,7 +104,7 @@ h1 {
 
 .polilogo {
   display: inline-block;
-  animation: mover 1s linear 8 alternate;
+  animation: mover 0.1s linear 8 alternate;
 }
 
 @keyframes mover {
