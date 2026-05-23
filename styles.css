@@ -119,9 +119,9 @@ h1 {
   }
 
  50% {
-    transform: translate(10px, 0px);
+    transform: translate(5px, 0px);
   }
    100% {
-    transform: translate(-10px, 0px);
+    transform: translate(-5px, 0px);
   }
 }
