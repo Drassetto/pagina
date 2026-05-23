@@ -107,6 +107,10 @@ h1 {
   animation: mover 0.1s linear 8 alternate;
 }
 
+
+.polilogo:hover {
+  animation: mover 0.1s linear 8 alternate;
+}
 @keyframes mover {
   from {
     transform: translate(0px, 0px);
