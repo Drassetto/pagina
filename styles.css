@@ -104,18 +104,18 @@ h1 {
 
 .polilogo {
   display: inline-block;
-  animation: mover 1s linear 3 alternate;
+  animation: mover 1s linear 8 alternate;
 }
 
 @keyframes mover {
   from {
-    transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px);
   }
 
   to {
-    transform: translate(50px, 0px);
+    transform: translate(10px, 0px);
   }
    to {
-    transform: translate(-50px, 0px);
+    transform: translate(-10px, 0px);
   }
 }
