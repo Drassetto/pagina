@@ -122,11 +122,11 @@ h1 {
     transform: translate(-5px, 0px);
   }
 }
-
 header {
   width: 100%;
   max-width: 780px;
   display: flex;
   justify-content: flex-end;
-  padding: 20px 0 5px 0;
+  padding: 0;
+  margin-bottom: -1.5rem;
 }
