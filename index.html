@@ -17,25 +17,26 @@
     <img class = "polilogo" src="https://raw.githubusercontent.com/Drassetto/pagina/8f3c3cb9780bb2dcd62be9b858c24d5a0579e0fb/polilogo.svg" width="90">
 </a>
 </header>
-
-    <div style="margin-top: 2rem; text-align: center;">
-  <label>Volumen: <span id="valorVolumen">50</span>%</label><br><br>
-  <input type="range" min="0" max="100" value="50" oninput="cambiarVolumen(this.value)">
+<div style="margin-top: 2rem; text-align: center;">
+  <audio id="audio" controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
   <br><br>
   <img id="fotoSecreta" src="https://pbs.twimg.com/media/HJSBDZPWgAMQX9G?format=jpg&name=large" 
        style="display:none; width:200px;">
 </div>
 
 <script>
-  function cambiarVolumen(valor) {
-    document.getElementById('valorVolumen').textContent = valor;
-    const foto = document.getElementById('fotoSecreta');
-    if (valor == 67) {
+  const audio = document.getElementById('audio');
+  const foto = document.getElementById('fotoSecreta');
+
+  audio.addEventListener('volumechange', function() {
+    const volumen = Math.round(audio.volume * 100);
+    if (volumen === 67) {
       foto.style.display = 'block';
     } else {
       foto.style.display = 'none';
     }
-  }
+  });
+</script>
 </script>
 <body>
 
