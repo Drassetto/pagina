@@ -84,7 +84,7 @@ h1 {
   overflow: hidden;
   height: 80px; 
   flex: 1;
-  max-width: none;
+  max-width: calc(100% / 5);
 }
 
 /* La imagen dentro de la celda */
