@@ -47,7 +47,7 @@ h1 {
   display: flex;           /* pone las celdas una al lado de la otra */
   align-items: stretch;    /* que todas las celdas tengan la misma altura */
   width: 100%;
-  max-width: 1100px;
+  max-width: 1300px;
   background: var(--surface);
   border-left: 1px solid var(--border);
   border-top: 1px solid var(--border);
