@@ -103,9 +103,11 @@ h1 {
   filter: grayscale(0%);
 }
 
-
 .polilogo {
   display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .polilogo:hover {
   animation: mover 0.1s linear 8 alternate;
@@ -121,12 +123,4 @@ h1 {
    100% {
     transform: translate(-5px, 0px);
   }
-}
-header {
-  width: 100%;
-  max-width: 780px;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0;
-  margin-bottom: -1.5rem;
 }
