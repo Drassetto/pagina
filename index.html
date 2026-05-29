@@ -1,82 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+
     <title>TP Estudiantes IPS</title>
-    <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
 
 <header>
-    <h1>Estudiantes IPS</h1>
+    <h1>Introducción al formateo css</h1>
     <a href="https://ips.edu.ar">
-        <img class="polilogo" src="https://raw.githubusercontent.com/Drassetto/pagina/8f3c3cb9780bb2dcd62be9b858c24d5a0579e0fb/polilogo.svg" width="90" alt="Logo IPS">
+        <img class="polilogo" src="https://raw.githubusercontent.com/Drassetto/pagina/8f3c3cb9780bb2dcd62be9b858c24d5a0579e0fb/polilogo.svg" width="90">
     </a>
 </header>
 
-<div class="audio-seccion">
-    <div class="reproductor">
+<div style="margin-top: 2rem; text-align: center;">
+  <div style="background: var(--header-bg); padding: 12px; border-radius: 14px; display: inline-block;">
         <audio id="audio" controls src="Shakira_ft._Wyclef_Jean_-_Hips_Don_t_Lie_DJ_Sol_Mr._Butter_Remix_(mp3.pm).mp3"></audio>
     </div>
-    <span class="texto-juga">← juga con el volumen</span>
+    <br><br>
+    <img id="fotoSecreta" src="https://pbs.twimg.com/media/HJSBDZPWgAMQX9G?format=jpg&name=large"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; object-fit:contain; background:black; z-index:9999;">
 </div>
-
-<img id="fotoSecreta" src="https://pbs.twimg.com/media/HJSBDZPWgAMQX9G?format=jpg&name=large" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; object-fit:contain; background:black; z-index:9999;" alt="Secreto">
-
-<main class="tabla-contenedor">
-    <div class="fila cabecera">
-        <div class="celda">Nombre Completo</div>
-        <div class="celda">Edad</div>
-        <div class="celda">email</div>
-        <div class="celda">DNI</div>
-        <div class="celda-foto">Foto</div>
-    </div>
-
-    <!--1-->
-    <div class="fila">
-        <div class="celda">Santiago Martinez Cuevas</div>
-        <div class="celda">17</div>
-        <div class="celda"></div>
-        <div class="celda"></div>
-        <div class="celda-foto">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" class="imgtabla" alt="C++">
-        </div>
-    </div>
-
-    <!--2-->
-    <div class="fila">
-        <div class="celda">Francisco Mastrangelo</div>
-        <div class="celda">18</div>
-        <div class="celda"></div>
-        <div class="celda">67676767</div>
-        <div class="celda-foto">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/LinkedIn_Headquarters_Mountain_View.jpg/960px-LinkedIn_Headquarters_Mountain_View.jpg" class="imgtabla" alt="LinkedIn">
-        </div>
-    </div>
-
-    <!--3-->
-    <div class="fila">
-        <div class="celda">Emilia Palena Blasco</div>
-        <div class="celda">17</div>
-        <div class="celda">emipalenablasco@gmail.com</div>
-        <div class="celda">91218</div>
-        <div class="celda-foto">
-            <img src="https://www.tudn.com/_next/image?url=https%3A%2F%2Fst1.uvnimg.com%2F27%2Fb2%2Ff5cd408d47cfb8eff64cf24a1ba7%2F636799951851755920.jpg&w=640&q=75" class="imgtabla" alt="Emilia">
-        </div>
-    </div>
-
-    <!--4-->
-    <div class="fila">
-        <div class="celda">Diego Rassetto</div>
-        <div class="celda">17</div>
-        <div class="celda">diegorassetto02@gmail.com</div>
-        <div class="celda">49446226</div>
-        <div class="celda-foto">
-            <img src="https://cdn.polyspeak.ai/speakmaster/b21d3b2995d6ddcb7c870097acf9a165.webp" class="imgtabla" alt="Diego">
-        </div>
-    </div>
-</main>
 
 <script>
   const audio = document.getElementById('audio');
@@ -91,5 +36,79 @@
     }
   });
 </script>
+</script>
+<body>
+
+  
+  <div class="fila cabecera">
+  <div class="celda">Nombre Completo </div>
+  <div class="celda">Edad</div>
+  <div class="celda">email</div>
+  <div class="celda">DNI</div>
+  <div class="celda-foto" style="display:flex; justify-content:center; align-items:center;">Foto</div>
+</div>
+
+<!--1-->
+
+  <div class = "fila">
+
+  <div class = "celda">Santiago Martinez Cuevas </div>
+  <div class = "celda">17</div>
+  <div class = "celda"></div>
+  <div class = "celda"></div>
+  <div class ="celda-foto">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" class = "imgtabla">
+
+  </div>
+
+</div>
+<!--2-->
+  <div class = "fila">
+
+  <div class = "celda">Francisco Mastrangelo</div>
+  <div class = "celda"> 18 </div>
+  <div class = "celda"></div>
+  <div class = "celda">67676767</div>
+  <div class ="celda-foto">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/LinkedIn_Headquarters_Mountain_View.jpg/960px-LinkedIn_Headquarters_Mountain_View.jpg" class = "imgtabla">
+
+  </div>
+
+</div>
+<!--3-->
+
+  <div class = "fila">
+
+  <div class = "celda">Emilia Palena Blasco</div>
+  <div class = "celda"> 17</div>
+  <div class = "celda"> emipalenablasco@gmail.com</div>
+  <div class = "celda">91218</div>
+
+  <div class ="celda-foto">
+
+    <img src="https://www.tudn.com/_next/image?url=https%3A%2F%2Fst1.uvnimg.com%2F27%2Fb2%2Ff5cd408d47cfb8eff64cf24a1ba7%2F636799951851755920.jpg&w=640&q=75" class = "imgtabla">
+
+  </div>
+
+</div>
+
+<!--4-->
+  <div class = "fila">
+
+  <div class = "celda">Diego Rassetto</div>
+  <div class = "celda">17</div>
+  <div class = "celda">diegorassetto02@gmail.com</div>
+  <div class = "celda">49446226</div>
+
+  <div class ="celda-foto">
+
+    <img src="https://cdn.polyspeak.ai/speakmaster/b21d3b2995d6ddcb7c870097acf9a165.webp" class="imgtabla">
+
+  </div>
+
+</div>
 </body>
+
 </html>
