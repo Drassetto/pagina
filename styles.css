@@ -1,15 +1,15 @@
-/* Variables de colores, las cambias aca y se actualiza todo */
+/* Variables de colores */
 :root {
-  --bg: #f5f1e8;          /* Fondo gris azulado muy claro */
-  --surface: #e7dfd1;     /* Fondo blanco para las filas */
-  --border: #d1d9e6;      /* Bordes suaves */
-  --header-bg: #1e1b18;   /* Azul marino profundo */
-  --header-text: #ffffff; /* Texto blanco */
-  --text: #1a2b4c;        /* Texto azul oscuro */
+  --bg: #f5f1e8;         
+  --surface: #e7dfd1;   
+  --border: #d1d9e6;      
+  --header-bg: #1e1b18;   
+  --header-text: #ffffff;
+  --text: #1a2b4c;        
 }
   .check-volumen {**
-cursor: pointer;          /* Hace que el cursor cambie a una "mano" al pasar por encima */
-accent-color: #007bff;    /* Cambia el color del checkbox cuando está activado (puedes usar el color que quieras) */
+cursor: pointer;          /* hace que el cursor cambie a una mano al pasar por encima */
+accent-color: #007bff;    /* cambia el color del checkbox cuando está activado */
 margin-right: 5px;        /* Separa un poquito el cuadradito del texto "Vol: 67%" */
 }
 
@@ -53,7 +53,7 @@ header h1 {
 }
 /* Cada fila de la tabla */
 .fila {
-  display: flex;           /* pone las celdas una al lado de la otra */
+  display: flex;        
   align-items: stretch;    /* que todas las celdas tengan la misma altura */
   width: 83%;
   background: var(--surface);
