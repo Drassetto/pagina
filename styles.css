@@ -9,7 +9,7 @@
 }
 .check-volumen {**
 cursor: pointer;          /* Hace que el cursor cambie a una "mano" al pasar por encima */
-accent-color: #007bff;    /* Cambia el color del checkbox cuando está activado (puedes usar el color que quieras) */
+accent-color: #ffffff;    /* Cambia el color del checkbox cuando está activado (puedes usar el color que quieras) */
 margin-right: 5px;        /* Separa un poquito el cuadradito del texto "Vol: 67%" */
 }
 
