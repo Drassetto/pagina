@@ -133,3 +133,37 @@ header h1 {
     transform: translate(-5px, 0px);
   }
 }
+/* =======================================================
+   REPARACIÓN DE COLUMNAS (Para que no se corte el texto)
+   ======================================================= */
+
+/* 1. Nombre Completo: Le damos el triple de espacio y lo alineamos a la izquierda */
+.celda:nth-child(1) {
+  flex: 3;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+/* 2. Edad: Como es solo un número, que ocupe muy poquito espacio */
+.celda:nth-child(2) {
+  flex: 0.6;
+}
+
+/* 3. Email: Le damos el doble de espacio y lo alineamos a la izquierda */
+.celda:nth-child(3) {
+  flex: 2.5;
+  justify-content: flex-start;
+  padding-left: 15px;
+  font-size: 0.9rem; /* Un cachito más chica la letra por si el mail es largo */
+}
+
+/* 4. DNI: Espacio estándar */
+.celda:nth-child(4) {
+  flex: 1.2;
+}
+
+/* 5. Foto: Pisamos el cálculo viejo para que se adapte al nuevo tamaño */
+.celda-foto {
+  flex: 1.5;
+  max-width: none; 
+}
