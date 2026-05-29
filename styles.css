@@ -119,10 +119,10 @@ header h1 {
   }
 
  50% {
-    transform: translate(5px, 0px);
+    transform: translate(2rem, 0px);
   }
    100% {
-    transform: translate(-5px, 0px);
+    transform: translate(2rem, 0px);
   }
 } 
 
