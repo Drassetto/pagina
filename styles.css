@@ -67,10 +67,14 @@ header h1 {
 
 /* La primera fila (cabecera) tiene fondo oscuro */
 .fila.cabecera {
-  display: flex;
-  background: var(--header-bg);
-  color: var(--header-text);
-  font-weight: 600;
+   display: flex;           
+  align-items: stretch;    
+  width: 85%;            
+  max-width: 1450px;       
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  height: 80px;
 }
 
 /* Efecto al pasar el mouse por una fila (menos la cabecera) */
