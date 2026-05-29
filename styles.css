@@ -1,11 +1,11 @@
 /* Variables de colores, las cambias aca y se actualiza todo */
 :root {
-  --bg: #f2f7f5;          /* Fondo verde clarito casi blanco */
-  --surface: #ffffff;     /* Filas blancas */
-  --border: #e2e8f0;      /* Bordes grises */
-  --header-bg: #00473e;   /* Verde esmeralda oscuro */
-  --header-text: #faae2b; /* Detalles en amarillo/dorado */
-  --text: #475569;        /* Texto gris oscuro */
+  --bg: #f0f4f8;          /* Fondo gris azul muy claro */
+  --surface: #ffffff;     /* Fondo blanco para las filas */
+  --border: #d1d9e6;      /* Bordes suaves */
+  --header-bg: #0a2540;   /* Azul marino  */
+  --header-text: #ffffff; /* Texto blanco */
+  --text: #1a2b4c;        /* Texto azul oscuro */
 }
 .check-volumen {**
 cursor: pointer;          /* Hace que el cursor cambie a una "mano" al pasar por encima */
