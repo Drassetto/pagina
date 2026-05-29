@@ -1,13 +1,12 @@
 /* Variables de colores, las cambias aca y se actualiza todo */
 :root {
-  --bg: #f5f5f5;          /* fondo de la pagina */
-  --surface: #ffffff;     /* fondo de las filas */
-  --border: #e0e0e0;      /* color de los bordes */
-  --header-bg: #3a3a3a;   /* fondo de la cabecera */
-  --header-text: #ffffff; /* texto de la cabecera */
-  --text: #333333;        /* texto normal */
+  --bg: #f0f4f8;          /* Fondo gris azulado muy claro */
+  --surface: #ffffff;     /* Fondo blanco para las filas */
+  --border: #d1d9e6;      /* Bordes suaves */
+  --header-bg: #0a2540;   /* Azul marino profundo */
+  --header-text: #ffffff; /* Texto blanco */
+  --text: #1a2b4c;        /* Texto azul oscuro */
 }
-
 .check-volumen {**
 cursor: pointer;          /* Hace que el cursor cambie a una "mano" al pasar por encima */
 accent-color: #007bff;    /* Cambia el color del checkbox cuando está activado (puedes usar el color que quieras) */
