@@ -32,7 +32,6 @@ body {
   display: flex;           /* centra todo */
   flex-direction: column;  /* apilado de arriba a abajo */
   align-items: center;     /* centrado horizontal */
-  padding: 3rem 1.5rem;
 }
 
 /* Titulo */
