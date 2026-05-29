@@ -4,270 +4,125 @@
   --surface: #ffffff;     /* Fondo blanco para las filas */
   --border: #d1d9e6;      /* Bordes suaves */
   --header-bg: #0a2540;   /* Azul marino  */
-  --header-text: #ffffff; /* Texto blanco */
-  --text: #1a2b4c;        /* Texto azul oscuro */
-}
 .check-volumen {**
-
 cursor: pointer;          /* Hace que el cursor cambie a una "mano" al pasar por encima */
-
 accent-color: #007bff;    /* Cambia el color del checkbox cuando está activado (puedes usar el color que quieras) */
-
 margin-right: 5px;        /* Separa un poquito el cuadradito del texto "Vol: 67%" */
-
 }
-
-
 
 /* Reseteo de margenes por defecto del navegador */
-
 * {
-
   box-sizing: border-box;
-
   margin: 0;
-
   padding: 0;
-
 }
-
-
-
-
-
-
-
 /* Estilo general de la pagina */
-
 body {
-
   background: var(--bg);
-
   font-family: sans-serif;
-
   color: var(--text);
-
   min-height: 100vh;
-
   display: flex;           /* centra todo */
-
   flex-direction: column;  /* apilado de arriba a abajo */
-
   align-items: center;     /* centrado horizontal */
-
 }
-
-
 
 header {
-
   width: 100%;
-
   background: var(--header-bg);
-
   color: var(--header-text);
-
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   padding: 1rem 2rem;
-
 }
-
  
 
-
-
 /* Titulo */
-
 header h1 {
-
   font-size: 1.5rem;
-
   font-weight: 600;
-
 }
-
  main {
-
   width: 100%;
-
   max-width: 1450px;
-
   padding: 2rem 1.5rem;
-
 }
-
 /* Cada fila de la tabla */
-
 .fila {
-
   display: flex;           /* pone las celdas una al lado de la otra */
-
   align-items: stretch;    /* que todas las celdas tengan la misma altura */
-
-  width: 100%;
-
+  width: 90%;
   background: var(--surface);
-
   border-left: 1px solid var(--border);
-
   border-top: 1px solid var(--border);
-
   height: 80px;
-
 }
-
-
 
 /* La primera fila (cabecera) tiene fondo oscuro */
-
 .fila.cabecera {
-
   display: flex;
-
   background: var(--header-bg);
-
   color: var(--header-text);
-
   font-weight: 600;
-
 }
-
-
 
 /* Efecto al pasar el mouse por una fila (menos la cabecera) */
-
 .fila:not(.cabecera):hover {
-
   background: #f0f0f0;
-
 }
-
-
 
 /* Cada celda de datos */
-
 .celda {
-
   flex: 1;                 /* todas las celdas ocupan el mismo ancho */
-
   border-right: 1px solid var(--border);
-
   border-bottom: 1px solid var(--border);
-
   display: flex;
-
   justify-content: center; /* texto centrado horizontal */
-
   align-items: center;     /* texto centrado vertical */
-
   padding: 10px;
-
 }
-
-
 
 /*sin padding para que la imagen ocupe todo */
-
 .celda-foto {
-
   padding: 0;
-
   overflow: hidden;
-
   height: 80px; 
-
   flex:  0 0 calc(100% / 5); 
-
   max-width: calc(100% / 5);
-
 }
 
 
-
-/* La imagen dentro de la celda */
-
 .imgtabla {
-
   width: 100%;
-
   height: 100%;
-
-  object-fit: contain;       /* la imagen ocupa toda la celda sin deformarse */
-
-  filter: grayscale(100%); /* empieza en blanco y negro */
-
-  transition: 0.3s;        /* animacion suave */
-
-}
-
-
-
-
-
-
-
-.imgtabla {
-
-  width: 100%;
-
-  height: 100%;
-
   object-fit: contain;
-
   filter: grayscale(0%);  
-
   transition: 0.3s;
-
 }
-
-
 
 .imgtabla:hover {
-
   filter: grayscale(100%);
-
 }
-
 .polilogo {
-
   display: inline-block;
-
   filter: brightness(0) invert(1); /* lo pone blanco sobre fondo oscuro */
-
 }
-
 .polilogo:hover {
-
   animation: mover 0.1s linear 8 alternate;
-
 }
 
 @keyframes mover {
 
   0% {
-
     transform: translate(0px, 0px);
-
   }
-
-
 
  50% {
-
     transform: translate(5px, 0px);
-
   }
-
    100% {
-
     transform: translate(-5px, 0px);
-
   }
-
 } 
 
