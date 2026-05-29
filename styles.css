@@ -73,6 +73,24 @@ header h1 {
   background: #f0f0f0;
 }
 
+.texto-juga {
+  position: absolute;
+  left: calc(50% + 175px);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--header-bg);
+  font-weight: 600;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0.8;
+  animation: sutil-izq 0.6s infinite alternate;
+}
+
+@keyframes sutil-izq {
+  0% { transform: translateY(-50%) translateX(0); }
+  100% { transform: translateY(-50%) translateX(-4px); }
+}
+
 /* Cada celda de datos */
 .celda {
   flex: 1;                
