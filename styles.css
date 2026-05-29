@@ -34,19 +34,33 @@ body {
   align-items: center;     /* centrado horizontal */
 }
 
+header {
+  width: 100%;
+  background: var(--header-bg);
+  color: var(--header-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+ 
+
 /* Titulo */
-h1 {
+header h1 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
 }
-
+ main {
+  width: 100%;
+  max-width: 1450px;
+  padding: 2rem 1.5rem;
+}
 /* Cada fila de la tabla */
 .fila {
   display: flex;           /* pone las celdas una al lado de la otra */
   align-items: stretch;    /* que todas las celdas tengan la misma altura */
   width: 100%;
-  max-width: 1550px;
+  max-width: 1450px;
   background: var(--surface);
   border-left: 1px solid var(--border);
   border-top: 1px solid var(--border);
