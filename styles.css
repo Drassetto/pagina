@@ -109,7 +109,7 @@ header h1 {
   filter: brightness(0) invert(1);
 }
 .polilogo:hover {
-  animation: mover 0.1s linear 8 alternate;
+  animation: mover 0.5s linear 8 alternate;
 }
 
 @keyframes mover {
@@ -122,7 +122,7 @@ header h1 {
     transform: translate(2rem, 0px);
   }
    100% {
-    transform: translate(2rem, 0px);
+    transform: translate(-2rem, 0px);
   }
 } 
 
